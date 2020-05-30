@@ -47,7 +47,8 @@ test_set = test_datagen.flow_from_directory(
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
-model.fit(
+
+history=model.fit(
         training_set,
         steps_per_epoch=500,
         epochs=5,
