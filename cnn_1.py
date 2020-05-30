@@ -63,7 +63,7 @@ if (max(history.history['accuracy'])) > .80 :
     model.save('model.h5')
 
 
-fh = open("/root/mlpos/accuracy.txt", "W")
+fh = open("/root/mlpos/accuracy.txt", "w")
 fh.write (str(history.history['accuracy']))
 fh.close()
 
