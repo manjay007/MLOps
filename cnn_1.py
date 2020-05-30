@@ -50,7 +50,7 @@ test_set = test_datagen.flow_from_directory(
 
 history=model.fit(
         training_set,
-        steps_per_epoch=500,
+        steps_per_epoch=100,
         epochs=5,
         validation_data=test_set,
         validation_steps=500)
@@ -63,7 +63,7 @@ if (max(history.history['accuracy'])) > .80 :
     model.save('model.h5')
 
 
-fh = open("/root/mlpos/accuracy.txt", "w")
+fh = open("/root/mlops/accuracy.txt", "w")
 fh.write (str(history.history['accuracy']))
 fh.close()
 
