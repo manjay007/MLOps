@@ -2,7 +2,13 @@ from keras.layers import Convolution2D
 from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
+from keras import metrics
 from keras.models import Sequential
+from keras.layers import Softmax
+from keras.optimizers import Adam
+import random
+
+
 
 import os
 
